@@ -7867,7 +7867,7 @@ void CTracker :: runGenerateDynstat( )
 						
 						delete pQuery;
 						
-						CMySQLQuery *pQueryTags = new CMySQLQuery( "SELECT bid,btag,bname FROM tags WHERE bhash=\'" + UTIL_StringToMySQL( (*it).first ) + "\'" );
+						CMySQLQuery *pQueryTags = new CMySQLQuery( "SELECT bid,btag,bname FROM tags WHERE bhash=\'" + UTIL_StringToMySQL( (*ulKey).first ) + "\'" );
 				
 						vector<string> vecQueryTags;
 					

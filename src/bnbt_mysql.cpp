@@ -19,6 +19,14 @@
 *
 ***/
 
+// #ifndef BNBT_MYSQL
+//  #define BNBT_MYSQL
+// #endif
+
+// #ifndef XBNBT_MYSQL
+//  #define XBNBT_MYSQL
+// #endif
+
 #if defined ( XBNBT_MYSQL ) || defined ( BNBT_MYSQL )
 
  #include "bnbt.h"
@@ -26,7 +34,7 @@
  #include "util.h"
  #include "config.h"
  
- #if defined ( XBNBT_MYSQL )
+#if defined ( XBNBT_MYSQL )
   #include "atom.h"
 //   #include "config.h"
  #endif

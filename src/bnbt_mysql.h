@@ -7,6 +7,14 @@
 #ifndef BNBT_MYSQL_H
  #define BNBT_MYSQL_H
 
+// #ifndef BNBT_MYSQL
+//  #define BNBT_MYSQL
+// #endif
+
+// #ifndef XBNBT_MYSQL
+//  #define XBNBT_MYSQL
+// #endif
+
 #if defined ( BNBT_MYSQL ) || defined ( XBNBT_MYSQL )
 
  #include <mysql.h>

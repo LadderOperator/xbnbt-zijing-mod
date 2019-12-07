@@ -485,7 +485,7 @@ struct xbnbtstats_t
 // Structure for holding announces
 struct announce_t
 {
-//	string strInfoHash;
+	string strInfoHash;
 	string strID;
 	string strIP;
 	string strEvent;
@@ -549,8 +549,8 @@ struct torrent_t
 	string strIMDbID;
 	string strIP;
 	string strOrder;
-// 	string strIgnore;
-// 	string strIgnored;
+ 	string strIgnore;
+ 	string strIgnored;
 };
 
 // Structure for holding peers
@@ -785,6 +785,7 @@ private:
 	string m_strStaticHeader;
 	string m_strStaticFooterFile;
 	string m_strStaticFooter;
+	string m_strForumLink;
 
 	// RSS (thanks labarks)
 	unsigned char m_ucDumpRSSFileMode;
@@ -908,6 +909,7 @@ private:
 	
 //	CAtomDicti *m_pCached;		// self.cached
 	CCache *m_pCache;
+	CAtomDicti *m_pDFile;
 
 	// Standard Tags
 	vector< pair< string, string > > m_vecTags;
