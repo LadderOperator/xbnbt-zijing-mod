@@ -45,7 +45,7 @@
 >#endif
 >```
 
-2. 本来以为漏了打算如上更改的，后来发现这两个宏定义是Makefile里面可控制的编译开关（捂脸）。把所有的相应参数里看情况加上`-DBNBT_MYSQL -DXBNBT_MYSQL -XBNBT_GD`
+2. 本来以为漏了打算如上更改的，后来发现这两个宏定义是Makefile里面可控制的编译开关（捂脸）。把所有的相应参数里看情况加上`-DBNBT_MYSQL -DXBNBT_MYSQL -XBNBT_GD`（但是没有确定原先是什么逻辑，见下方的Makefile部分记录）
 
 
 ```Makefile
@@ -212,3 +212,9 @@ private:
 
 这个文件大量文件链接问题，目前尝试修改只能编译通过前两个……
 那几个开关的逻辑没有搞清楚，有空再说.jpg
+
+目前修改了`OBJS`和`OBJS_BNBT`，并且添加了下面缺失的部分文件。
+
+目测几个开关`-DBNBT_MYSQL -DXBNBT_MYSQL -XBNBT_GD`有其自己的控制作用。
+
+有一说一，代码真的乱……
