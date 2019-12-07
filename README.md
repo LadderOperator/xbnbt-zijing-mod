@@ -191,6 +191,7 @@ private:
 
 ```C++
 	CMySQLQuery *pQueryTags = new CMySQLQuery( "SELECT bid,btag,bname FROM tags WHERE bhash=\'" + UTIL_StringToMySQL( (*it).first ) + "\'" );
+```
 
 ## Makefile
 
@@ -207,10 +208,7 @@ private:
 
 ```
 
-
-## Makefile
-
-这个文件大量文件链接问题，目前尝试修改只能编译通过前两个……
+这个文件还有大量文件链接问题，目前尝试修改只能编译通过前两个……
 那几个开关的逻辑没有搞清楚，有空再说.jpg
 
 目前修改了`OBJS`和`OBJS_BNBT`，并且添加了下面缺失的部分文件。
